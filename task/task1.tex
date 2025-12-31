@@ -1,6 +1,10 @@
 \documentclass[]{article}
 
 \usepackage{graphicx} % Required for inserting images
+\usepackage{svg}
+\svgsetup{
+    inkscapeexe=/Applications/Inkscape.app
+}
 \usepackage{ragged2e} %Genutzt um Bilder zu zentrieren oder Rechts- oder Linksbündig anzuzeigen
 \justifying
 
@@ -67,10 +71,10 @@ Der Fokus liegt auf der Implementierung einer Klasse, dabei nutzen wir insbesond
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\linewidth]{diagram/classes_files.png}
+  \includesvg[width=0.7\linewidth]{../diagram/classes_files}
   \caption{Klassendiagramm}
-  \label{fig:classes}
 \end{figure}
+
 
 \subsection{Einleitung} \label{sec: Einleitung}
 

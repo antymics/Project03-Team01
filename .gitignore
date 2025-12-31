@@ -1,6 +1,9 @@
 .DS_Store
+.texpadtmp
+svg-inkscape
 
 *.aux
 *.fdb_latexmk
 *.log
 *.fls
+
