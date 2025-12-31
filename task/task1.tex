@@ -1,9 +1,37 @@
 \documentclass[]{article}
 
-\usepackage[utf8]{inputenc} 
-\usepackage[T1]{fontenc} 
-\usepackage{graphicx}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{ragged2e} %Genutzt um Bilder zu zentrieren oder Rechts- oder Linksbündig anzuzeigen
+\justifying
+
+
+%Textformatierung
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{helvet} % Lädt die Helvetica-Schriftart
+\renewcommand{\familydefault}{\sfdefault} % Setzt Sans-Serif (Helvetica) als Standard
+\usepackage[onehalfspacing]{setspace} %setzt 1,5 Zeilenabstand
+\usepackage[utf8]{inputenc} % Für direkte Eingabe von Sonderzeichen
+\usepackage[T1]{fontenc}    % Für korrekte Zeichenkodierung
+\usepackage[german]{babel} % Für die deutsche Sprache und Umlaute
+\usepackage{amsmath, amssymb} %Mathematikanzeige
+
+\usepackage{geometry} %Ermöglicht Seitenabstände einzustellen
+\usepackage{layout} %Anzeige zum einsehen der Einstellungen für die Seitenabstände
 \usepackage{enumitem}
+
+\geometry{
+	left=2cm,
+	right=2cm,
+   marginpar=3cm}
+   
+
+\usepackage{algorithm} %Ermöglicht Algorithmen zu schreiben
+
+
+\usepackage{tikz} 
+\usetikzlibrary{arrows, automata, positioning} %Ermöglicht Automaten zu designen
+
 
 \begin{document}
 
@@ -35,12 +63,14 @@
 \section{Projektaufgabe} \label{sec: Projektaufgabe}
 
 In dieser Aufgabe beschäftigen wir uns mit Objektorientierung in Python.
-Der Fokus liegt auf der Implementierung einer Klasse, dabei nutzen wir insbesondere auch Magic Methods.\\
-\\
+Der Fokus liegt auf der Implementierung einer Klasse, dabei nutzen wir insbesondere auch Magic Methods.
 
-\hspace*{2cm}\includegraphics[width=12cm, height=5cm]{./../diagram/classes_files.png}\\
-\hspace*{3cm}\scriptsize\bf Abbildung 1: \normalfont Darstellung der Klassenbeziehungen.\normalsize\\
-
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\linewidth]{diagram/classes_files.png}
+  \caption{Klassendiagramm}
+  \label{fig:classes}
+\end{figure}
 
 \subsection{Einleitung} \label{sec: Einleitung}
 
